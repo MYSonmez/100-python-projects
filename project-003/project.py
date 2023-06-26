@@ -51,3 +51,4 @@ if left_right.lower() == "left":
         print("You get attacked by an angry trout. Game Over.")
 else:
     print("You fell into a hole. Game Over.")
+ 
