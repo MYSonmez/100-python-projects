@@ -1,4 +1,4 @@
-# # LOOPS
+# # for ... in ...:
 
 
 
@@ -12,7 +12,7 @@
 
 # # Range
 
-# for n in range(1, 10, 3): 
+# for n in range(1, 10, 3):    
 #   print(n)
 
 # # OUTPUT // 1
