@@ -36,4 +36,3 @@
 #         highest_score = highest_score
         
 # print(f"The highest score in the class is: {highest_score}")
-
