@@ -124,4 +124,3 @@
 # print(a > 9 or a < 1) # OUTPUT // True
 # print(a > 15 or a < 5) # OUTPUT // False
 # print(not a > 9) # OUTPUT // False
-
