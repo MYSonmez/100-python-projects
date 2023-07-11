@@ -1,4 +1,5 @@
 import random
+import os
 import hangman_arts
 import hangman_words
 
@@ -14,11 +15,11 @@ print(hangman_arts.logo)
 for _ in range(word_length):
     display += "_"
 
-print(display)
-
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
-
+    
+    os.system('cls')
+     
     if guess in display:
         print(f"You've already guessed {guess}")
     for position in range(word_length):
