@@ -43,6 +43,8 @@ def country(x):
 
 a = random_compare()
 b = random_compare()
+if a == b:
+    b = random_compare()
 
 print(logo)
 
@@ -57,8 +59,12 @@ while is_not_wrong:
 
     if guess == winner():
         score += 1
+
         a = b
         b = random_compare()
+        if a == b:
+            b = random_compare()
+
         clear()
         print(logo)
         print(f"You're right! Current score: {score}")
