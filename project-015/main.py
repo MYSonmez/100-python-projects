@@ -26,6 +26,7 @@ while choice != "off":
     else:
         if coffee >= MENU[choice]["ingredients"]["coffee"]:
             if water >= MENU[choice]["ingredients"]["water"]:
+                print("Please insert coins.")
                 quarters = int(input("How many quarters?: "))
                 dimes = int(input("How many dimes?: "))
                 nickles = int(input("How many nickles?: "))
