@@ -15,22 +15,20 @@
 #     g = random.randint(0, 255)
 #     b = random.randint(0, 255)
 #     return (r, g, b)
-    
-    
+
+
 # for _ in range(100):
 #     kusi.pencolor(random_color())
 #     random_angle = random.choice(directions)
 #     kusi.setheading(random_angle)
 #     kusi.forward(25)
-        
+
 
 # screen = t.Screen()
 # screen.exitonclick()
 
 
-
 #############################################################################################
-
 
 
 # import turtle
@@ -53,7 +51,7 @@
 #     kusi.pencolor(random_color())
 #     kusi.circle(100)
 #     kusi.left(6)
-    
-    
+
+
 # screen = turtle.Screen()
 # screen.exitonclick()
