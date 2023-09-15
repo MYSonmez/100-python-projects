@@ -17,6 +17,7 @@ def random_color():
     b = random.randint(0, 255)
     return (r, g, b)
 
+
 x = -225
 y = -225
 for _ in range(10):
@@ -26,7 +27,6 @@ for _ in range(10):
     for _ in range(10):
         kusi.dot(20, random_color())
         kusi.forward(50)
-
 
 
 screen = turtle.Screen()
