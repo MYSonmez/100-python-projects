@@ -31,4 +31,3 @@ for _ in range(10):
 
 screen = turtle.Screen()
 screen.exitonclick()
- 
