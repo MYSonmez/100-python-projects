@@ -1,27 +1,34 @@
 from turtle import Turtle
 
-ALIGAMENT = "center"
-FONT = ("Arial", 16, "normal")
+ALIGNMENT = "center"
+FONT = ("Courier", 20, "normal")
 
 
 class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
-        self.color("blue")
+        self.score = 0
+        self.highscore = 0
+        self.color("white")
         self.penup()
-        self.goto(0, 264)
+        self.goto(0, 260)
         self.hideturtle()
+        self.update_scoreboard()
+
+    def reset(self):
+        if self.score > self.highscore:
+            self.highscore = self.score
         self.score = 0
         self.update_scoreboard()
 
     def update_scoreboard(self):
-        self.write(arg=f"Score = {self.score}", move=False, align=ALIGAMENT, font=FONT)
-
-    def game_over(self):
-        self.goto(0, 0)
-        self.write("GAME OVER", move=False, align="center", font=FONT)
+        self.clear()
+        self.write(
+            f"Score: {self.score} Higscore = {self.highscore}",
+            align=ALIGNMENT,
+            font=FONT,
+        )
 
     def increase_score(self):
-        self.clear()
         self.score += 1
         self.update_scoreboard()
