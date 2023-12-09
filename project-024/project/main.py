@@ -22,10 +22,14 @@ while succesful_guess != 50:
     guess = screen.textinput(title=f"{succesful_guess}/50 Make Your Guess!", prompt="To win you must guess over than 15 (Type 'exit' to exit)")
     if guess == None:
         break
+    else:
+        guess = guess.title()
     while guess != "Exit" and (guess not in states_name_list or guess in guessed_states):
         guess = screen.textinput(title=f"{succesful_guess}/50 Make Your Guess!", prompt="To win you must guess over than 15 (Type 'exit' to exit)")
         if guess == None:
             break
+        else:
+            guess = guess.title()
     if guess == "Exit":
         break
     succesful_guess += 1
