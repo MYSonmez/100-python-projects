@@ -7,8 +7,5 @@ with open("project-023/Input/Letters/starting_letter.txt") as letter_file:
     for name in names:
         stripped_name = name.strip()
         new_letter = letter.replace(PLACEHOLDER, stripped_name)
-        with open(
-            f"project-023/Output/ReadyToSend/letter_for_{stripped_name}.txt",
-            "w",
-        ) as new_file:
+        with open(f"project-023/Output/ReadyToSend/letter_for_{stripped_name}.txt","w",) as new_file:
             new_file.write(new_letter)
