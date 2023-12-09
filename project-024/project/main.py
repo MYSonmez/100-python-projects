@@ -38,6 +38,8 @@ while succesful_guess != 50:
         )
         if guess != None:
             guess = guess.title()
+        else:
+            break
     if guess == "Exit":
         break
     succesful_guess += 1
