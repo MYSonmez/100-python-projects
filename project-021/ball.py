@@ -1,3 +1,4 @@
+import random
 from turtle import Turtle
 
 
@@ -8,6 +9,7 @@ class Ball(Turtle):
         self.color("white")
         self.penup()
         self.SPEED = [3, 1]
+        self.COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 
     def move(self):
         self.goto(self.xcor() + self.SPEED[0], self.ycor() + self.SPEED[1])
@@ -23,3 +25,6 @@ class Ball(Turtle):
         self.goto(0, 0)
         rp.goto(360, 0)
         lp.goto(-360, 0)
+
+    def random_color(self):
+        self.color(random.choice(self.COLORS))

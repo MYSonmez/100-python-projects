@@ -26,9 +26,17 @@ screen.onkey(l_paddle.down, "s")
 
 game_is_on = True
 while game_is_on:
+    # acclerate the ball
+    if ball.xcor() >= 340 or ball.xcor() <= -340:
+         ball.SPEED[0] *= 1.03
+         ball.SPEED[1] *= 1.03
+         ball.random_color()
+    
+    # goal case
     if ball.xcor() > 380 or ball.xcor() < -380:
         scoreboard.increase_score(ball)
         ball.reset_position(rp=r_paddle, lp=l_paddle)
+        ball.SPEED = [3,1]
     screen.update()
     time.sleep(0.008)
     ball.move()
