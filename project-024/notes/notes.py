@@ -56,6 +56,8 @@
 #     "ages": [23,25,22,17]
 # }
 
+# import pandas as pd
+
 # df = pd.DataFrame(data_dictionary, index = [0,1,2,3])
 # print(df)
 
