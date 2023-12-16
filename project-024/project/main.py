@@ -68,10 +68,7 @@ else:
     )
 screen.exitonclick()
 
-missing_states = []
-for s in states_name_list:
-    if s not in guessed_states:
-        missing_states.append(s)
+missing_states = [state for state in states_name_list if state not in guessed_states]
 
 df = pandas.DataFrame(missing_states)
 df.to_csv("project-024/project/not_guessed_states.csv")
